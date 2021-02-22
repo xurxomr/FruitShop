@@ -1,13 +1,7 @@
 ﻿using FruitShop.Models;
-using Newtonsoft.Json;
-// using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 
 namespace FruitShop.DAL
@@ -47,7 +41,7 @@ namespace FruitShop.DAL
 		private static T ReadFileData<T>(string fileName)
 		{
 			string jsondata = File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataFiles", fileName));
-			return new JavaScriptSerializer().Deserialize<T>(jsondata);
+			return new JavaScriptSerializer(new SimpleTypeResolver()).Deserialize<T>(jsondata);
 		}
 	}
 }

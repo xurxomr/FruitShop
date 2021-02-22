@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"description": "Buy {1} {0} and pay {2}.",
+		"description": "Buy {1} {0}s and pay {2}.",
 		"params": [
 			"fruitId",
 			"quant",
@@ -20,7 +20,7 @@
 	},
 	{
 		"id": 3,
-		"description": "For every {2}€ spent on {0}, we will deduct {1}€ from your final invoice.",
+		"description": "For every {2}€ spent on {0}s, we will deduct {1}€ from your final invoice.",
 		"params": [
 			"fruitId",
 			"quant",

@@ -14,7 +14,6 @@ namespace FruitShop
 
 			Services.RecipeGenerator.Generate(DAL.DataContext.Purchase);
 
-
 			Console.ReadLine();
 		}
 

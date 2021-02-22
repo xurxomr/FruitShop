@@ -12,7 +12,7 @@ namespace FruitShop.Services
 		public static void Generate(List<PurchaseLine> purchase)
 		{
 			Console.WriteLine("Products purchased:");
-			purchase.ForEach(l => Console.WriteLine($"\t{DAL.DataContext.Fruits.FirstOrDefault(f => f.Id == l.FruidId).Description}\t\tx {l.Quantity}"));
+			purchase.ForEach(l => Console.WriteLine($"\t{DAL.DataContext.Fruits.FirstOrDefault(f => f.Id == l.FruitId).Description}\t\tx {l.Quantity}"));
 
 			ApplyOffers(purchase);
 
@@ -26,15 +26,18 @@ namespace FruitShop.Services
 
 			purchase.ForEach(l =>
 			{
-				List<Offer> offers = DAL.DataContext.Offers.Where(o => o.Params[0] == l.FruidId && o.Params[1] >= l.Quantity).ToList();
+				List<Offer> offers = DAL.DataContext.Offers.Where(o => o.Params[0] == l.FruitId && o.Params[1] >= l.Quantity).ToList();
 
 				offers.ForEach(o =>
 				{
-					string message = string.Format(DAL.DataContext.OfferTypes.Where(ot => ot.Id == o.OffertTypeId).FirstOrDefault().Description, o.Params);
+					string format = DAL.DataContext.OfferTypes.Where(ot => ot.Id == o.OffertTypeId).FirstOrDefault().Description;
+					string[] parms = o.Params.Select(p => p.ToString()).ToArray();
+					parms[0] = DAL.DataContext.Fruits.FirstOrDefault(f => f.Id.ToString() == parms[0]).Description;
+					string message = string.Format(format, parms);
 
 					Console.WriteLine($"\t: {message}");
 				});
-			}
+			});
 		}
 	}
 }

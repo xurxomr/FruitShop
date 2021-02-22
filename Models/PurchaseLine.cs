@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace FruitShop.Models
 {
 	class PurchaseLine
 	{
-		public int FruidId { get; set; }
+		public int FruitId { get; set; }
 		public int Quantity { get; set; }
 	}
 }

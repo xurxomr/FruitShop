@@ -6,9 +6,6 @@ C:\Users\jmuina\Documents\GitHub\FruitShop\bin\Debug\DataFiles\offertypes.json
 C:\Users\jmuina\Documents\GitHub\FruitShop\bin\Debug\FruitShop.exe.config
 C:\Users\jmuina\Documents\GitHub\FruitShop\bin\Debug\FruitShop.exe
 C:\Users\jmuina\Documents\GitHub\FruitShop\bin\Debug\FruitShop.pdb
-C:\Users\jmuina\Documents\GitHub\FruitShop\bin\Debug\Newtonsoft.Json.dll
-C:\Users\jmuina\Documents\GitHub\FruitShop\bin\Debug\Newtonsoft.Json.xml
-C:\Users\jmuina\Documents\GitHub\FruitShop\obj\Debug\FruitShop.csproj.CopyComplete
 C:\Users\jmuina\Documents\GitHub\FruitShop\obj\Debug\FruitShop.exe
 C:\Users\jmuina\Documents\GitHub\FruitShop\obj\Debug\FruitShop.pdb
 C:\Users\jmuina\Documents\GitHub\FruitShop\bin\Debug\DataFiles\purchase.json
