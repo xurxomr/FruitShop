@@ -1,0 +1,14 @@
+[
+	{
+		"fruitId": 1,
+		"quantity": 3
+	},
+	{
+		"fruitId": 3,
+		"quantity": 25
+	},
+	{
+		"fruitId": 2,
+		"quantity": 12
+	}
+]

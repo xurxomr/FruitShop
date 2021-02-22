@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"description": "Buy {1} {0} and pay {2}.",
+		"params": [
+			"fruitId",
+			"quant",
+			"payQuant"
+		]
+	},
+	{
+		"id": 2,
+		"description": "Get {2} free {3} for every {1} {0} you buy.",
+		"params": [
+			"fruitId",
+			"quant",
+			"freeQuant",
+			"freeFruitId"
+		]
+	},
+	{
+		"id": 3,
+		"description": "For every {2}€ spent on {0}, we will deduct {1}€ from your final invoice.",
+		"params": [
+			"fruitId",
+			"quant",
+			"spentMoney"
+		]
+	}
+]
